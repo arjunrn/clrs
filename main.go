@@ -15,6 +15,7 @@ func main() {
 	fmt.Println("4. Longest Common Subsequence")
 	fmt.Println("5. Recursive Activity Selector")
 	fmt.Println("6. Iterative Activity Selector")
+	fmt.Println("7. Huffman Tree")
 	fmt.Printf("Enter choice: ")
 	var choice int
 	fmt.Scanf("%d", &choice)
@@ -31,6 +32,8 @@ func main() {
 		greedyalgorithms.RecursiveActivitySelection()
 	case 6:
 		greedyalgorithms.IterativeActivitySelection()
+	case 7:
+		greedyalgorithms.HuffManTree()
 	default:
 		dynamicprogramming.MemoizedCutRod()
 		fmt.Printf("Invalid Choice\n")
