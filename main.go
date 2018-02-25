@@ -14,6 +14,7 @@ func main() {
 	fmt.Printf("3. Matrix Multiplication Optimum Cost\n")
 	fmt.Println("4. Longest Common Subsequence")
 	fmt.Println("5. Recursive Activity Selector")
+	fmt.Println("6. Iterative Activity Selector")
 	fmt.Printf("Enter choice: ")
 	var choice int
 	fmt.Scanf("%d", &choice)
@@ -28,6 +29,8 @@ func main() {
 		dynamicprogramming.LCS()
 	case 5:
 		greedyalgorithms.RecursiveActivitySelection()
+	case 6:
+		greedyalgorithms.IterativeActivitySelection()
 	default:
 		dynamicprogramming.MemoizedCutRod()
 		fmt.Printf("Invalid Choice\n")
